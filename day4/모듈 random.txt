@@ -1,0 +1,7 @@
+모듈 (앞에 import붙이는것 같당)
+math
+datetime
+time
+calendar
+random
+
