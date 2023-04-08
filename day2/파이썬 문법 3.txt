@@ -1,0 +1,123 @@
+*안녕하세요 출력
+print("hi~") 를 10번 출력한다면 
+-> while 조건문사용
+1. 유형1
+while 조건문:
+    실행문
+    증감값
+
+2. 유형2 무한반복 조건문 (while ~break)
+초기값
+while True:
+     실행문
+    if 조건:
+    break
+# 반복문(while무한반복) while1파일은 무한반복 아닌거임
+#1부터 10까지 출력
+
+n = 0
+while True:
+    n = n + 1
+    print(n)
+#무한반복으로 shell에 나온다 이 경우 콘트롤 c로 shell을 끄자
+    
+
+#반복문 while 조건문은 if
+
+i = 1 #메모리 i라는 변수에 0을 할당, 처음 시작할때 시작값이 있어야 한다
+while i < 11: #종료값(비교조건)
+    print("안녕", i)
+    i = i +1 #증가값
+
+*i = 1 #메모리 i라는 변수에 0을 할당, 처음 시작할때 시작값이 있어야 한다
+while i < 11: #종료값(비교조건)
+    print("안녕", i)
+    i = i +1 #증가값
+  #"안녕"이 출력시 옆에 숫자가 같이 출력된다
+
+*누적값 구할때
+# 1부터 10까지의 합계
+sum_v = 0  #sum같이 보라색으로 나오는 함수는 이름으로 쓸때 다른거 같이스삼
+sum_v = sum_v + 1
+sum_v = sum_v + 2
+sum_v = sum_v + 3
+sum_v = sum_v + 4
+print(sum_v)
+조금 더 간단하게 누적값 구하기
+i = 0
+sum_v = 0
+
+while i < 10:
+    i = i + 1
+    sum_v = sum_v + i
+    print("i=", i , "sum_v", sum_v)
+    
+print("합계:", sum_v)
+
+#반복구문에서 'y' 이면 "반복을 계속합니다"
+#'n'이면 "반복을 중단합니다."
+# 'y', 'n' 둘다 아니면 "정상 답변이 아닙니다."
+#조건이 3개이므로 if,elif,else를 쓴다
+무한반복중
+while True:
+    key = input("반복을 계속 할까요(y/n)?")
+
+    if key == 'y':
+        print("반복을 계속합니다.")
+    elif key == 'n':
+        print("반복을 중단합니다.")
+    else:
+        print("정상 답변이 아닙니다.")
+-> break를 넣으면 무한반복이 끝난다
+while True:
+    key = input("반복을 계속 할까요(y/n)?")
+
+    if key == 'y':
+        print("반복을 계속합니다.")
+    elif key == 'n':
+        print("반복을 중단합니다.")
+        break
+    else:
+        print("정상 답변이 아닙니다.")
+#대문자도 넣어보기 
+while True:
+    key = input("반복을 계속 할까요(y/n)?")
+
+    if key == 'y' or key == 'Y':
+        print("반복을 계속합니다.")
+    elif key == 'n' or key == 'N':
+        print("반복을 중단합니다.")
+        break
+    else:
+        print("정상 답변이 아닙니다.")
+
+coffe_muchine.py(파이썬 사용시 단어를 두개 이상 결합시 "_언더바"를 쓴다
+#커피 자동판매기 프로그램
+coffee = 5
+
+#돈 넣는 건 계속 반복
+while True:
+    money = int(input("돈을 넣어주세요: "))    
+    if money == 400: #커피 가격은 400원
+        print("커피가 나옵니다.")
+        coffee = coffee -1 #커피를 팔아서 커피의 수량이 줄어든다
+    elif money > 400:
+        print("커피가 나오고, 거스름돈 "+ str(money-400) + "원입니다.")
+        coffee = coffee - 1
+        print("남은 커피의 양은 ", str(coffee) , "개입니다.")
+    break
+
+*while True:
+    money = int(input("돈을 넣어주세요: "))    
+    if money == 400: #커피 가격은 400원
+        coffee = coffee -1 #커피를 팔아서 커피의 수량이 줄어든다
+    elif money > 400:
+        print("커피가 나오고, 거스름돈 "+ str(money-400) + "원입니다.")
+        coffee = coffee - 1   
+    else:
+        print("커피가 나오지 않습니다.")
+    print("남은 커피의 양은 ", str(coffee) , "개입니다.")
+    #커피의 개수가 0이되면 반복중단이다
+    if coffee == 0:
+        print("커피가 모두 소진되었습니다, 판매를 중지합니다.")
+        break

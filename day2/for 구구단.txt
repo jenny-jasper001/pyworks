@@ -1,0 +1,17 @@
+#숫자 누적 더할시
+sum_v = 0 
+i=1
+i+= 1
+sum_v = sum_v+i
+
+#문자 누적 더할때
+result_val=""
+
+current_val = f'{dan} * {i} = {dan * i}'  #얘가 9번 찍힌다
+result_val=result_val+current_val
+
+
+dan = int(input("단을 입력하세요: "))
+
+for i in range(1, 90):
+    print(f'{dan} * {i} = {dan * i}')

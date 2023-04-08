@@ -1,0 +1,46 @@
+제어 (조건 반복)
+조건 if (if else)
+반복 while for
+
+점수 = 75 #내 점수 75때
+if 점수 >= 60:  #60점 이상시 합격
+    print("합격") # 합격시
+else:  #불합격시
+
+i = 0 #반복 변수 = 0 #반복변수 0임
+while 반복 < 10:  (1부터 10까지 출력)
+    i+=1   #i =1+1    
+    print(i)
+
+#반복 조건문
+i = 0
+while True: #true여야 실행
+    i+= 1
+    if i> 10:
+       break;
+    print(i, end='')
+
+#자리 배치 할때
+입장객: 20 #입장객이 20명일때
+좌석열:5
+
+줄(행) 수 :4 #(나누어 떨어진다. 나머지가 0)
+입장객%좌석열 == 0 #줄수 그대로 하면 됨
+
+#딱 안떨어질때
+입장객:22
+좌석열:5
+줄수:5 #(나머지가 0이 아니라 1,2,3,4인 경우)
+줄수+1 #if else문
+
+customer = int(input("입장객 수 입력: ")) #입장객
+col_num = int(input("좌석 열 수 입력: ")) #colum numer = 5 좌석이 5개
+row_num = 0;  #줄수
+
+if customer % col_num == 0:
+    row_num = int(customer / col_num)    
+else:
+    row_num = int(customer / col_num) + 1 #계산시 소수가 나오면 안되므로 정수가 되게 int
+
+print(str(row_num)+ "줄이 필요합니다.")
+

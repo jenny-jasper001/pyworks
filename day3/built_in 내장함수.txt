@@ -1,0 +1,7 @@
+모듈 (Module) - 파일
+Import price
+from price import get_price
+
+#import datetime
+현재 날짜와 시간을 알 수 있다
+특정 날짜와 시간,요일을 알 수 있다

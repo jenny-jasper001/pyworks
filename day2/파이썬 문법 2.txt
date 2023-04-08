@@ -1,0 +1,44 @@
+if 비교식 and 비교식:
+   실행문1
+else:
+    실행문2
+(4칸 들여쓰기)
+
+#근속년수가 5년이상이고 직급이 사원이면 대리로 승진
+직급 = '사원'
+근속년수 = 5
+
+if 직급 == '사원' and 근속년수 >=5:
+    print("승진 대상입니다.")
+else:
+     print("승진 대상이 아닙니다.")
+
+* and 와 or
+직급 = '사원'
+근속년수 = 1
+직급 == '사원' and 근속년수 == 2
+False
+직급 == '사원' and 근속년수 == 1
+True
+직급 == '사원' or 근속년수 == 2
+true
+
+*가위바위보 = ['가위','바위','보']
+가위바위보[0]
+'가위'
+가위바위보[1]
+'바위'
+pocket = ['스마트폰', 'money', 'paper']
+'money' in pocket
+True
+'coin' in pocket
+False
+
+*# 교통수단
+pocket = ['스마트폰', 'money', 'paper']
+if 'coin' in pocket:
+    print("택시를 탄다")
+else:
+    print("지하철에 탄다")
+shell에 지하철에 탄다가 출력이 된다
+

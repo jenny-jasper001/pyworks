@@ -1,0 +1,48 @@
+파이선 문법
+파이썬 - 인터프리터 라이브러리 설정 관련 소프트웨어
+ 툴(tool)- IDLE
+파이썬3버전을 쓰고 있다
+관리자 명령 프롬프트  
+
+shell에서
+예) a = 10 a라는 변수에 10이 있다
+number = 100 number에 100이 들어가있다
+number == 100 number 은 100이다
+number != 100 number 은 100이 아니다
+
+if 조건문: (콜론)
+    수행문(들여쓰기,4칸)
+조건문의 종류
+1. if 단독
+2. if ~ else문
+
+#조건문(if ~elif ~ else문) : 다중 조건문인 경우
+
+pizza = 'yes' 
+pizza = 'no'
+chicken = 'yes'
+
+if pizza == 'yes':
+    print('피자 가게로 가자')  #처음에는 일반 if 구문부터 써준다
+elif chicken == 'yes':
+    print('치킨가게로 가자')
+else:  #puzza가 yes가 아니라는 뜻이 숨겨져 있다 , pizza != yes
+    print('편의점에서 라면을 먹자')
+    
+#조건문(if ~elif ~ else문) : 다중 조건문인 경우
+
+pizza = '예'
+chicken = '예'
+
+if pizza == 'yes':
+    print('피자 가게로 가자')  #처음에는 일반 if 구문부터 써준다
+elif chicken == 'yes':
+    print('치킨가게로 가자')
+else:  #puzza가 yes가 아니라는 뜻이 숨겨져 있다 , pizza != yes
+    print('편의점에서 라면을 먹자')
+    
+#'예'는  yes와 다르다 그래서 if elif는 둘다 false 로  인식되서 출력되지 않고
+# else에서 입력받아서 '편의점에서 라면을 먹자'를 입력한다
+    'yes' == 'yes' true
+    'YES' == 'yes' false
+    '예' == '예' true
