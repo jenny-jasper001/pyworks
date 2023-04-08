@@ -12,8 +12,8 @@ str1 = str1.replace("World", "Korea") #World를 Korea로 바꾸어준다
 print(str1)
 
 #문자열의 공백 처리 함수 - strip()
-str2 = " hi, soo"
-str2 = str2.strip() #왼쪽 오른쪽 공백 처리
+str2 = "    hi, soo"
+str2 = str2.strip() #왼쪽 오른쪽 공백 처리 #"    hi, soo"인 상황인데 띄어쓰기된 공백을 지워는게 공백처리함수
 str2 = str2.lstrip()  #왼쪽을 공백처리
 print(str2)
 

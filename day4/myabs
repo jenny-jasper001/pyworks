@@ -1,7 +1,0 @@
-# 절대값을 계산하는 함수
-
-def myabs(x):
-
-
-print(myabs(-1)) #1이 나옴
-print(abs(-1))

@@ -12,6 +12,7 @@ print(day)
 
 # 수행시간 출력하기
 #1부터 10까지 출력하기
+"""
 start = time.time() #시작 시간
 for i in range(1, 11):
     print(i)
@@ -21,3 +22,8 @@ for i in range(1, 11):
 end = time.time() #끝나는 시긴
 print(f'수행시간 : {end-start:0.3f}초') #이걸 수행하는데 얼마나 걸렸는지 계산
 #0.3f는 소수 3째 자리 까지 출력
+"""
+import calendar
+
+calendar.prcal(2023) #달력 보고 싶을때
+calendar.prmonth(2023, 4) #23년 4월 출력

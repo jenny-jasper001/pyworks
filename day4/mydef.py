@@ -15,18 +15,22 @@ print(abs(-1))
 def times(x):
     for i in range(1, 31):
     #pass #오류 날꺼 같으면 pass써놓으면 오류가 안난다
+        global count
         if i % x == 0: #3으로 나누어 떨어지는 수(나머지가 0인것)
+            count = count + 1 # (3의 배수의 갯수)
             print(i, end=' ')
-times(3)
+
 
 """
 i = 1, 1 % 3 == 0 false
 i = 2, 2 % 3 == 0 false
-i = 3, 3 % 3 == 0 true 3이 true
+i = 3, 3 % 3 == 0 true 3이 true 개수1
 i = 4, 4 % 3 == 0 false
 i = 5, 5 % 3 == 0 false
-i = 6, 6 % 3 == 0 true 3,6이 true
+i = 6, 6 % 3 == 0 true 3,6이 true 개수2
 i = 7, 7 % 3 == 0 false
 """
 
+count = 0 #전역 변수 (정적 변수)
 times(3)
+print(f'\n배수의 개수 : {count}') #\n 역슬레쉬는 줄 바꺼주는 것이다

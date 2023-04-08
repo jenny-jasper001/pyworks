@@ -5,7 +5,7 @@ def square(x): #square는 제곱수를 의미
     return x * x
 
 #print(square(2)) #우리가 함수를 만든것
-
+#print(square(5)) 하면 25나옴, print(square(6))하면 36나옴
 #1이 증가하는 함수
 def one_up(x): #매개변수 x한개
     x = x + 1
