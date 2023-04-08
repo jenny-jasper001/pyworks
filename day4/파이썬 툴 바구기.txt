@@ -1,8 +1,8 @@
-깃허브 - 자주 사용하는 사이트
+git깃허브 - 자주 사용하는 사이트
 깃허브 소프트웨어 다운
 #깃 허브 올리는 프로세스
 gif config --global user.name "본인 아이디"
-1. git add.
+1. git add .
 2.git commit -m "수업내용"
 3.git push
 선생님 아이디 kiyongee2

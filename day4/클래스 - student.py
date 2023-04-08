@@ -4,8 +4,9 @@
 class Student:
 
     # __int__가 클래스에 꼭 들어간다
-    def __init__(self): #초기자(함수)
-         self.name = "이순신"
+    #Student에 대한 이름과 학년을 초기자(함수에 저장해준다)
+    def __init__(self): #초기자(함수) #멤버 변수
+         self.name = "이순신" #self는 저절로 붙여주는 것이다
          self.grade = 1
 
 #클래스에서 객체로 만들어주면 메모리가 된다
