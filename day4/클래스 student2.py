@@ -12,6 +12,11 @@ s1 = Student("김하나", 1) #student1하고 차이는 밖에서 입력해준거
 print(f'{s1.name} 학생은 {s1.grade}학년입니다.')
 s1.learn() #def learn(self):으로 print되어 있어서 s1.learn()이라고 써주면 된다
 
-s2 = Student("이둘", 2)
+s2 = Student("이 둘", 2)
 print(f'{s2.name} 학생은 {s2.grade}학년입니다.')
 s2.learn()
+
+kim = Student("김혜린", 3)
+print(f'{kim.name} 학생은 {kim.grade}학생입니다')
+kim.learn()
+

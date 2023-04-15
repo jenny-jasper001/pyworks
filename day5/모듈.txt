@@ -1,0 +1,51 @@
+#파일을 주고 바을 파일 만들기 pyfile
+@@절대 경로
+c:/pyfile 
+c:/pyfile/test.txt #
+
+@@상대경로
+
+@@문자가 아닌 영상이나 음성파일 일때(wb, rb)
+
+
+calculator.py -> 파일 (모듈)
+함수, 클래스 
+
+메모장
+csv 파일
+사진, 영상을 네크워크를 통해 주고 받을 수 있습니당
+
+줄바꾸는 기호 '\n'  #\가 아니라 역 슬레쉬이다.
+
+#파일 쓰기 - 반복해서 쓰기 
+for문
+
+##
+f = open(파일경로, 모드)
+f.close()
+
+with open(파일경로, 모드) as f:   #f = file 객체를 말하는거 클래스에서 객체 생성한것과 같다
+
+f = open("c:/pyfile/repeat.txt", 'w')
+for i in range(1, 11):
+    #f.write(str(i)) #숫자는 안되므롷 str(i)로 써주어야 한다
+    data = f'{i}번째 줄입니다.\n' #f string
+    f.write(data)
+
+
+f.close()
+
+
+
+#f = open, f.close를 줄여써 쓴거
+# 반복 쓰기
+#f = open("c:/pyfile/repeat.txt", 'w')
+with open("c:/pyfile/repeat.txt", 'w') as f: #:이 있으므로 tab키로 4칸 들여써야한다
+    for i in range(1, 11):
+        #f.write(str(i)) #숫자는 안되므롷 str(i)로 써주어야 한다
+        data = f'{i}번째 줄입니다.\n' #f string
+        f.write(data)
+
+
+#f.close()
+
