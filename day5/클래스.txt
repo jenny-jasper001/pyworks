@@ -1,0 +1,12 @@
+클래스 정의
+class 클래스이름:
+    def__int__(self, name):    #생성자 #def뒤에, int뒤에_ _2개쓴거임 청 4개
+       #pass
+        self.name = name
+
+    def info(self):       #멤버함수
+        print("정보입니다.")
+
+c1 = 클래스이름('김기용')    #클래스 사용(c1 객체 생성)
+print(c1.name)
+c1.info()
